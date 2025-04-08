@@ -145,13 +145,18 @@ section {
 
 /* Individual number container */
 .side-numbers div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center contents */
+  align-items: center;      /* Horizontally center contents */
   text-align: center;
   flex: 1;
-  position: relative; /* Position relative for red line */
-  padding: 20px; /* Padding to ensure text and numbers are centered */
-  background: #f0f0f0; /* Background color for each container */
+  position: relative;
+  padding: 20px;
+  background: #f0f0f0;
   border-radius: 10px;
-  margin-right: 20px; /* Space between each container */
+  margin-right: 20px;
+  min-height: 180px; /* Ensures consistent box height */
 }
 
 /* Red vertical line on the left of the number container */
